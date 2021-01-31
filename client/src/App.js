@@ -54,8 +54,8 @@ function App() {
 
             <input
               type="text"
-              placeholder="New Food Name" />
-            onChange={(event) => { setNewFoodName(event.target.value) }}
+              placeholder="New Food Name"
+              onChange={(event) => { setNewFoodName(event.target.value) }} />
 
             <button onClick={() => updateFood(val._id)}>Update</button>
             <button>Delete</button>
