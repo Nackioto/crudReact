@@ -57,7 +57,7 @@ app.put('/update', async (req, res) => {
 });
 
 
-app.get('/delete/:id', async (req, res) => {
+app.delete('/delete/:id', async (req, res) => {
 
     const id = req.params.id;
     await FoodModel.findByIdAndRemove(id).exec();

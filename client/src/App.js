@@ -51,7 +51,7 @@ function App() {
       {foodList.map((val, key) => {
 
         return (
-          <div key={key}>
+          <div key={key} className="food">
 
             <h1>{val.foodName}</h1>
             <h1>{val.daysSinceIAte}</h1>
