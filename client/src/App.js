@@ -29,6 +29,10 @@ function App() {
     });
   };
 
+  const deleteFood = (id) => {
+    Axios.delete(`http://localhost:3001/delete/${id}`);
+  };
+
   return (
     <div className="App">
       <h1>CRUD App with MERN</h1>
@@ -58,7 +62,7 @@ function App() {
               onChange={(event) => { setNewFoodName(event.target.value) }} />
 
             <button onClick={() => updateFood(val._id)}>Update</button>
-            <button>Delete</button>
+            <button onClick={() => deleteFood(val._id)}>Delete</button>
           </div>
         )
       })}
